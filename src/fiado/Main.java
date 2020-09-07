@@ -12,6 +12,11 @@ public class Main {
 		String nome = scanner.nextLine();
 		Consumidor consumidor = new Consumidor(nome);
 		
+		//TELEPHONE
+		System.out.println("Informe o telefone do cliente: ");
+		int telefone = Integer.valueOf(scanner.nextLine());
+		consumidor.setTelefone(telefone);
+		
 		System.out.print("Informe o valor da compra: ");
 		int fiado = Integer.valueOf(scanner.nextLine());
 		consumidor.registrarFiado(fiado);
@@ -19,9 +24,9 @@ public class Main {
 		int total = consumidor.getFiado();
 		
 		if (total > 100) {
-			System.out.println("Cliente " + consumidor.getNome() + " deve: " + total + " - ganhou brinde!");
+			System.out.println("Cliente " + consumidor.getNome() + " e telefone: " + consumidor.getTelefone() + ", deve: " + total + " - ganhou brinde!");
 		} else {
-			System.out.println("Cliente " + consumidor.getNome() + " deve: " + total);
+			System.out.println("Cliente " + consumidor.getNome() + " e telefone: " + consumidor.getTelefone() + ", deve: " + total);
 		}
 		
 	}

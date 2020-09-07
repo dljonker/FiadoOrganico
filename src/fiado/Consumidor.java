@@ -7,15 +7,17 @@ public class Consumidor {
 	private String nome;
 	private int[] fiados;
 	private int posicao = 0;
+	private int telefone = 0;
 	
 	//CONSTRUTOR
 	public Consumidor(String nome) {
 		this.nome = nome;
 		this.fiados = new int[10];
+		this.telefone = 0;
 	}
 	
 	//GETTER E SETTER
-	public String getNome( ) {
+	public String getNome() {
 		return this.nome;
 	}
 	
@@ -34,5 +36,14 @@ public class Consumidor {
 			total += fiado;
 		}
 		return total;
+	}
+	
+	//TELEPHONE
+	public int getTelefone() {
+		return this.telefone;
+	}
+	
+	public void setTelefone(int telefone) {
+		this.telefone = telefone;
 	}
 }
