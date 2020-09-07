@@ -13,7 +13,7 @@ public class Main {
 		Consumidor consumidor = new Consumidor(nome);
 		
 		//TELEPHONE
-		System.out.println("Informe o telefone do cliente: ");
+		System.out.print("Informe o telefone do cliente: ");
 		int telefone = Integer.valueOf(scanner.nextLine());
 		consumidor.setTelefone(telefone);
 		
