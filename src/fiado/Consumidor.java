@@ -26,8 +26,13 @@ public class Consumidor {
 	}
 	
 	public void registrarFiado(int valor) {
-		this.fiados[posicao] = valor;
-		posicao++;
+		if (valor < 0) {
+			System.out.println("Não é possível adicionar valores negativos!");
+		} else {
+			this.fiados[posicao] = valor;
+			posicao++;
+		}
+		
 	}
 	
 	public int getFiado() {

@@ -24,9 +24,9 @@ public class Main {
 		int total = consumidor.getFiado();
 		
 		if (total > 100) {
-			System.out.println("Cliente " + consumidor.getNome() + " e telefone: " + consumidor.getTelefone() + ", deve: " + total + " - ganhou brinde!");
+			System.out.println("Cliente " + consumidor.getNome() + ", com telefone: " + consumidor.getTelefone() + ", deve: " + total + " - ganhou brinde!");
 		} else {
-			System.out.println("Cliente " + consumidor.getNome() + " e telefone: " + consumidor.getTelefone() + ", deve: " + total);
+			System.out.println("Cliente " + consumidor.getNome() + ", com telefone: " + consumidor.getTelefone() + ", deve: " + total);
 		}
 		
 	}
