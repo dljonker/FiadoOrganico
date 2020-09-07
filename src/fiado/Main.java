@@ -1,4 +1,4 @@
-
+package fiado;
 
 import java.util.Scanner;
 
